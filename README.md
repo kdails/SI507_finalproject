@@ -1,6 +1,6 @@
 # Project Title
 
-Kara Dailey - Scraping NPS, caching, creating a CSV and Database to interface with Flask.
+Kara Dailey - Scraping NPS, caching, creating a CSV and Database to interface with using Flask.
 
 [Link to this repository](https://github.com/kdails/final_project_checkin)
 
