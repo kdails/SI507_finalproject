@@ -11,9 +11,9 @@ Kara Dailey - Scraping NPS, caching, creating a CSV and Database to interface wi
 <h2>This project for SI507 requires that you have python 3.7, Beautiful Soup, SQLite and others that provides opportunity to interact with scraped website data to aggregate it, read and write it in an organized CSV. </h2>
 <h3>After running, this program will create 3 new files - a SQLite database (allstateparks_info.sqlite) , a CSV (nps_parks.csv) and a json cache file (nps_cache.json). In order for this project to work properly, please refer to the required list of dependencies in requirements.txt and pip-install all dependencies to a virtual environment within the project folder for this application to run.</h3>
 
-<h4> Additionally, there's a soon to be(not-finshed yet) but in progress Flask file defining flask applications that will build upon the SQLAlchemy database that has been created by the SI507SI507project_tools file.</h4>
+<h4> Additionally, there's a soon to be(not-finshed yet) but in progress Flask file defining flask applications that will build upon the SQLAlchemy database that has been created by the SI507project_tools file.</h4>
 
-<h4> Over the course of the next week, I plan on spending time making the Flask interface for this project simple and easy to use and define paths for the  </h4>
+<h4> Over the course of the next week, I plan on spending time making the Flask interface for this project simple and easy to use and define paths for them too - so far i've considered the following paths listed below under "Routes in this application"  </h4>
 
 <h4> Also included for this check-in is a test file that tests for two major parts of this project assignment, the database as well as the CSV correctness.
 
@@ -21,7 +21,7 @@ Kara Dailey - Scraping NPS, caching, creating a CSV and Database to interface wi
 
 1. First, you should ...install all requirements with `pip install -r requirements.txt`)
 2. Second, you should run `python SIproject_tools.py`
-3. If you want to run the test file, do so after the `python SIproject_tools.py` file is run because the output of that file ( database and csv) influence the success of the test.)
+3. If you want to run the test file, do so after the `python SIproject_tools.py` file is run because the output of that file ( database and csv) influences the success of the test.)
 
 ## How to use
 
@@ -42,8 +42,8 @@ Interface description
 
 
 ## How to run tests
-1. First - cd into this repository after cloning this repository to your machine.
-2. Second - run the SI507_project_tests file
+1. First - cd into this repository after cloning to your machine.
+2. Second - run the SI507_project_tests file. 
 
 ## In this repository:
 - SI507project_tools.py - where the scraping, caching and csv creation happens
