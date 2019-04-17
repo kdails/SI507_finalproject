@@ -46,11 +46,13 @@ Interface description
 2. Second - run the SI507_project_tests file
 
 ## In this repository:
-- Directory Name
-  - File in directory
-  - File in directory
-- File name
-- File name
+- SI507project_tools.py - where the scraping, caching and csv creation happens
+- db_setup.py - where the classes for the database creation are set up and is initialized. 
+- requirements.txt - current requirements from my virtual environment needed in order to run this program properly.
+- SI507project_tests.py - must be run AFTER the tools file is run.
+- ReadMe.md - this readme file with all the know-how information on this project.
+- IMG_4873.JPG - A picture of my Database as it currently stands and how I designed it to begin with.
+- nps_parks.csv - the CSV that is included just for show and my own reference - if you want to cache your own, just delete this file after you've finished cloning this repository and run the tools file in your terminal! 
 
 ---
 ## Code Requirements for Grading
