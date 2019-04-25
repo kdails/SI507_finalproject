@@ -3,17 +3,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Menu</title>
   </head>
   <body>
     <div class="container">
-        <div class="mt-5 jumbotron">
-            <h1 class="display-4">Navigate to view NPS.gov data!</h1>
-            <p class="lead">We have different interface views using different python modules</p>
+        <div style="background-image:url(https://imgix.bustle.com/uploads/getty/2019/1/13/b9399d5e-2390-49c3-8e8c-42b6ea69b53c-getty-1077345682.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70);background-size: cover!important" class="mt-5 jumbotron">
+            <h1 style = "color:white" class="display-4">Navigate to view NPS data!</h1>
+            <p style = "color:white; font-size: 30px " class="lead">Below, select information and an interface view.</p>
             <hr/>
             <a class="btn btn-primary btn-lg" href="/all" role="button">Show List View</a><br><br>
             <a class="btn btn-primary btn-lg" href="/table" role="button">Show Table View</a><br><br>
-            <a class="btn btn-primary btn-lg" href="/search" role="button">Menu Page</a><br><br>
             <a class="btn btn-primary btn-lg" href="/allstateinfo" role="button">Show States</a><br><br>
         </div>
 

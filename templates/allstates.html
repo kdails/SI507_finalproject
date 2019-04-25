@@ -3,15 +3,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>All Parks</title>
   </head>
   <body>
     <div class="container">
-        <div class="mt-5 jumbotron">
-            <h1 class="display-4">Full States List</h1>
-            <p class="lead">On this page you can browse through all of the states and head to their respective links to learn more. </p>
+        <div style="background-image:url(https://www.lonelyplanet.com/travel-blog/tip-article/wordpress_uploads/2012/08/15484-11.jpg);background-size: cover!important" class="mt-5 jumbotron">
+            <h1 style="color:white"class="display-4">Full States List</h1>
+            <p style="color:white; font-size: 30px" class="lead">On this page you can browse through all of the states and head to their respective links to learn more. </p>
             <br>
-            <p class="lead"> Below, follow the button to navigate back to the menu</p>
+            <p style="color:white; font-size: 30px" class="lead"> ... or navigate below</p>
             <hr class="my-4">
             <a class="btn btn-primary btn-lg" href="/search" role="button">Menu Page</a>
             <a class="btn btn-primary btn-lg" href="/all" role="button">Show List View</a>
