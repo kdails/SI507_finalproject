@@ -41,6 +41,7 @@ Before doing anything, download this entire project file. Then you must create a
 Interface description
 - Route 1: /   →   
   This page is the welcome screen, it's just for an overview and blurb about the app with a nice national parks image from Yellowstone featuring some Bison.
+  
 
 - Route 2: /all →   
   This page will show all scraped parks from the Park database table with abbreviations populated from the State table. Image featured is from Joshua Tree National Park.
@@ -60,14 +61,22 @@ Interface description
 
 ## In this repository:
 - SI507project_tools.py - where the scraping, caching and csv creation happens
+- app.py is where the flask application routes are defined, see above for info on the routes.
+- forms.py is where the form is set up for the main page of the app, the user is able to dropdown and view the column names with this. It imports wtfforms, a module that made the form handling more simple. 
+- models.py is important because the database is created with SQLAlchemy, so models are needed for Flask to interact with the database that's created with the tools file.
+- nps_cache.json is where the scraped data is cached before getting turned into a CSV file. 
+- nps_parks.csv is the csv file that is created with the tools file. It's not necessary for this file to be created, but if people want to view it, they can and I thought it would be a nice addition to look at the data! 
 - db_setup.py - where the classes for the database creation are set up and is initialized. 
 - requirements.txt - current requirements from my virtual environment needed in order to run this program properly.
 - SI507project_tests.py - must be run AFTER the tools file is run.
-- READMe.md - this readme file with all the know-how information on this project.
+- README.md - this readme file with all the know-how information on this project that you're currently reading.
 - IMG_4873.JPG - A picture of my Database as it currently stands and how I designed it to begin with.
 - nps_parks.csv - the CSV that is included just for show and my own reference - if you want to cache your own, just delete this file after you've finished cloning this repository and run the tools file in your terminal! 
 - db.py is where the SQLAlchemy is called. 
 - models.py is a file that created a model for the app to use in querying data from the database. It took me a long time to figure out that SQLAlchemy and SQLAlchemy flask were so different in many ways, and especially in the way that SQLAlchemy Flask sets up models for it's databases, so that's why this file exists. 
+- tables.py is the setup for the flask_table module and it creates the Results class for the table contents and structure. 
+- IMG_4873.JPG includes a sketch and draft of my database
+- allstateparks_info.sqlite is the database that is created when you run the SI507project_tools.py file.
 - TEMPLATES FOLDER includes all of the templates and html files that are the structure of the app interface. these include the following 
   - _formhelpers.html which throws form error help if needed, this uses mainly JINJA to template and throw errors if needed. 
   - all.html which is where the all route leads mentioned above. It uses JINJA to template the information for each park as well as call the CSS file.  
@@ -121,3 +130,4 @@ Below is a list of the requirements listed in the rubric for you to copy and pas
 ### Submission
 - [X] I included a link to my GitHub repository with the correct permissions on Canvas! (Did you though? Did you actually? Are you sure you didn't forget?)
 - [ ] I included a summary of my project and how I thought it went **in my Canvas submission**!
+
