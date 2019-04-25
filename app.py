@@ -88,4 +88,4 @@ def table_results(search):
 #     return '<h1>Please use the form to visit this link</h1>'  # just in case user use another request method
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(port=5000)
