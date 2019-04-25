@@ -11,6 +11,9 @@ engine = create_engine('sqlite:///allstateparks_info.sqlite', echo=False)
 Base = declarative_base()
 
 session = scoped_session(sessionmaker())
+# db_session = scoped_session(sessionmaker(autocommit=False,
+#                                          autoflush=False,
+#                                          bind=engine))
 
 
 Base.metadata.bind = engine

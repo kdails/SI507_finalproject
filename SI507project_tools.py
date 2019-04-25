@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests, json, csv
 from db_setup import *
+from db import *
+from models import State, Park, StateParkAssociation
 
 # setting up the caching ---- jackies code was hard, made simpler with less stuff from 506
 def open_cache(CACHEFILE):
@@ -31,9 +33,9 @@ if not nps_base_url:
     nps_base_url = requests.get(BASEURL).text
     cache_data(CACHEFILE,BASEURL,cache_diction,nps_base_url)
 
+
 # create a BeautifulSoup object with the data
 soup = BeautifulSoup(nps_base_url, "html.parser")
-
 # get the text of the class that contains the list of states in the dropdown and add each state to the database if it doesn't already exist
 dropdown =  soup.find('ul', class_='dropdown-menu SearchBar-keywordSearch')
 #print(dropdown)
@@ -56,9 +58,7 @@ states = session.query(State.Id,State.URL).all()
 for state in states:
     id = state[0]
     url = state[1]
-
     url_data = cache_diction.get(url)
-
     if not url_data:
         url_data = requests.get(url).text
         cache_data(CACHEFILE,url,cache_diction,url_data)
