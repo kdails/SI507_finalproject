@@ -1,6 +1,6 @@
 /* if you need use a static file outside the flask ecosystem, you need a folder called static and a method called url_for */
 body {
-  background-color: #7FDBFF;
+  background-color: #b5d4e2;
 }
 
 p {
