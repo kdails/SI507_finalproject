@@ -68,14 +68,13 @@ Interface description
 - nps_parks.csv - the CSV that is included just for show and my own reference - if you want to cache your own, just delete this file after you've finished cloning this repository and run the tools file in your terminal! 
 - db.py is where the SQLAlchemy is called. 
 - models.py is a file that created a model for the app to use in querying data from the database. It took me a long time to figure out that SQLAlchemy and SQLAlchemy flask were so different in many ways, and especially in the way that SQLAlchemy Flask sets up models for it's databases, so that's why this file exists. 
--TEMPLATES FOLDER includes all of the templates and html files that are the structure of the app interface. these include the following 
+- TEMPLATES FOLDER includes all of the templates and html files that are the structure of the app interface. these include the following 
   - _formhelpers.html which throws form error help if needed, this uses mainly JINJA to template and throw errors if needed. 
   - all.html which is where the all route leads mentioned above. It uses JINJA to template the information for each park as well as call the CSS file.  
   - allstates.html is where the all states route leads to and provides info and links to state information.and uses JINJA to template the information for each state as well as call the CSS file.  
   - index.html is the greeting page of the app and uses JINJA call the CSS file. 
   - results.html is where the table is created and uses JINJA to template the table as well as call the CSS file.
-  - searchform.html is where all of the buttons are and can be navigated to. This page additionally offers a form drop view of the table column names for the Parks table. 
-  - 
+  - searchform.html is where all of the buttons are and can be navigated to. This page additionally offers a form drop view of the table column names for the Parks table.  
 
 
 ---
@@ -95,28 +94,28 @@ Below is a list of the requirements listed in the rubric for you to copy and pas
 - [X] Includes a sample .sqlite/.db file
 - [X] Includes a diagram of your database schema
 - [X] Includes EVERY file needed in order to run the project
-- [ ] Includes screenshots and/or clear descriptions of what your project should look like when it is working
+- [X] Includes screenshots and/or clear descriptions of what your project should look like when it is working
 
 ### Flask Application - soon to exist!
-- [ ] Includes at least 3 different routes
-- [ ] View/s a user can see when the application runs that are understandable/legible for someone who has NOT taken this course
-- [ ] Interactions with a database that has at least 2 tables
-- [ ] At least 1 relationship between 2 tables in database
-- [ ] Information stored in the database is viewed or interacted with in some way
+- [X] Includes at least 3 different routes
+- [X] View/s a user can see when the application runs that are understandable/legible for someone who has NOT taken this course
+- [X] Interactions with a database that has at least 2 tables
+- [X] At least 1 relationship between 2 tables in database
+- [X] Information stored in the database is viewed or interacted with in some way
 
 ### Additional Components (at least 6 required)
-- [O] Use of a new module
-- [ ] Use of a second new module
+- [X] Use of a new module - flask_table
+- [X] Use of a second new module - wtforms
 - [ ] Object definitions using inheritance (indicate if this counts for 2 or 3 of the six requirements in a parenthetical)
 - [X] A many-to-many relationship in your database structure
-- [ ] At least one form in your Flask application
-- [O] Templating in your Flask application
-- [O] Inclusion of JavaScript files in the application
-- [ ] Links in the views of Flask application page/s
+- [X] At least one form in your Flask application
+- [X] Templating in your Flask application
+- [ ] Inclusion of JavaScript files in the application
+- [X] Links in the views of Flask application page/s
 - [ ] Relevant use of `itertools` and/or `collections`
 - [X] Sourcing of data using web scraping
 - [ ] Sourcing of data using web REST API requests
-- [X] Sourcing of data using user input and/or a downloaded .csv or .json dataset
+- [ ] Sourcing of data using user input and/or a downloaded .csv or .json dataset
 - [X] Caching of data you continually retrieve from the internet in some way
 
 ### Submission
