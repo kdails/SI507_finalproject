@@ -22,6 +22,8 @@ Kara Dailey - Scraping NPS, caching, creating a CSV and Database to interface wi
 1. First, you should ...install all requirements with `pip install -r requirements.txt`)
 2. Second, you should run `python SIproject_tools.py`
 3. If you want to run the test file, do so after the `python SIproject_tools.py` file is run because the output of that file ( database and csv) influences the success of the test.)
+4. Now you should be able to run the app.py program.
+
 
 ## How to use
 
