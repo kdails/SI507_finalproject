@@ -1,6 +1,6 @@
 # Project Title
 
-Kara Dailey - Scraping NPS, caching, creating a CSV and Database to interface with using Flask.
+Kara Dailey - Scraping NPS, caching, creating a CSV and Database to view with using Flask.
 
 [Link to this repository](https://github.com/kdails/final_project_checkin)
 
@@ -9,23 +9,26 @@ Kara Dailey - Scraping NPS, caching, creating a CSV and Database to interface wi
 ## Project Description
 
 <h2>This project for SI507 requires that you have python 3.7, Beautiful Soup, SQLite and others that provides opportunity to interact with scraped website data to aggregate it, read and write it in an organized CSV. </h2>
-<h3>After running, this program will create 3 new files - a SQLite database (allstateparks_info.sqlite) , a CSV (nps_parks.csv) and a json cache file (nps_cache.json). In order for this project to work properly, please refer to the required list of dependencies in requirements.txt and pip-install all dependencies to a virtual environment within the project folder for this application to run.</h3>
+<h3>After running, this program will create 3 new files - a SQLite database (allstateparks_info.sqlite) , a CSV (nps_parks.csv) and a json cache file (nps_cache.json). In order for this project to work properly, please refer to the required list of dependencies in requirements.txt and pip-install all dependencies into a virtual environment within the project folder for this application to run.</h3>
 
-<h4> Additionally, there's a soon to be(not-finshed yet) but in progress Flask file defining flask applications that will build upon the SQLAlchemy database that has been created by the SI507project_tools file.</h4>
+<h4> Additionally, after running the tools file which caches, scrapes and builds the database, you can now run the app.py file. This app.py file is a Flask file defining flask applications that will build upon the SQLAlchemy database that has been created by the SI507project_tools file.</h4>
 
-<h4> Over the course of the next week, I plan on spending time making the Flask interface for this project simple and easy to use and define paths for them too - so far i've considered the following paths listed below under "Routes in this application"  </h4>
+<h4> Over the past few weeks, I've made the Flask interface for this project simple and easy to use and presents data and information in a way that is more understandable than a messy JSON file and additionally uses modules that are new to me like WTForms as well as Flask-Table which you will need to install with the requirements.txt.  These paths are defined and can be reached at any page of the application - 've considered the following paths listed below under "Routes in this application"  </h4>
 
 <h4> Also included for this check-in is a test file that tests for two major parts of this project assignment, the database as well as the CSV correctness.
 
 ## How to run
+Before doing anything, download this entire project file. Then you must create a virtual environment within the project folder. Now you should move on to the following steps:
 
 1. First, you should ...install all requirements with `pip install -r requirements.txt`)
 2. Second, you should run `python SIproject_tools.py`
 3. If you want to run the test file, do so after the `python SIproject_tools.py` file is run because the output of that file ( database and csv) influences the success of the test.)
+4. Now, in your shell again type a different command: `python app.py`
+5. This will now throw back information into the terminal about the port for the application - all you need to do now is copy the following URL into your browser and press enter:  http://localhost:5000/ - you'll get a greeting and options to view data using organization from different modules depending on the button you'll press. 
 
 ## How to use
 
-1. So far we don't have anything super useful, but if you run the SI507_project_tools file, you'll see the scraped data from nps.gov get transformed into a database and csv file.
+1. You'll notice that if you run the SI507_project_tools file, you'll see the scraped data from nps.gov get transformed into a database and csv file.
 2. My next moves ater this check in are solidify the routes which are tentatively listed below!
 
 ## Routes in this application
