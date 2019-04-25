@@ -40,19 +40,39 @@ Before doing anything, download this entire project file. Then you must create a
 
 Interface description
 - Route 1: /   →   
+
+<img width="1255" alt="Screen Shot 2019-04-25 at 5 57 10 PM" src="https://user-images.githubusercontent.com/35503089/56771168-ef057600-6783-11e9-9369-7a970036a2cf.png">
+
   This page is the welcome screen, it's just for an overview and blurb about the app with a nice national parks image from Yellowstone featuring some Bison.
   
 
 - Route 2: /all →   
+
+
+<img width="1192" alt="Screen Shot 2019-04-25 at 5 58 40 PM" src="https://user-images.githubusercontent.com/35503089/56771241-21af6e80-6784-11e9-8191-264bc12ab809.png">
+
   This page will show all scraped parks from the Park database table with abbreviations populated from the State table. Image featured is from Joshua Tree National Park.
 
 - Route 3: /allstateinfo  →   
+<img width="1190" alt="Screen Shot 2019-04-25 at 5 59 00 PM" src="https://user-images.githubusercontent.com/35503089/56771256-2d029a00-6784-11e9-870f-79fffcd7dc0f.png">
+
   This page will show the information on all state parks with data from the State table. You can copy and paste the hyperlink into your browser to learn more about the state and what's available in terms of national parks within it. The image featured is of Grand Canyon in the winter.
  
 - Route 4: /search  →
-  This page acts as a navigation page. You're able to get anywhere on the site from this centralized location. It additionally features a dropdown of the columns in the Park table which the user can look at. I wanted to see what I could do with a new module, so I tried my hand at wtform to showcase the information. 
+<img width="1253" alt="Screen Shot 2019-04-25 at 5 58 14 PM" src="https://user-images.githubusercontent.com/35503089/56771275-3a1f8900-6784-11e9-943c-3fc0b96371b6.png">
 
-- Route 5: /table  →   
+  This page acts as a navigation page. You're able to get anywhere on the site from this centralized location. It additionally features a dropdown of the columns in the Park table which the user can look at. 
+  
+  <img width="531" alt="Screen Shot 2019-04-25 at 5 58 29 PM" src="https://user-images.githubusercontent.com/35503089/56771320-47d50e80-6784-11e9-94b5-34aef0a2603f.png">
+  
+  I wanted to see what I could do with a new module, so I tried my hand at wtform to showcase the information. 
+
+- Route 5: /table  → 
+
+
+<img width="1184" alt="Screen Shot 2019-04-25 at 5 58 47 PM" src="https://user-images.githubusercontent.com/35503089/56771350-58858480-6784-11e9-8ce5-ee937613b022.png">
+
+
   This page was tough for me to figure out. I wanted to be able to present the data for the parks in something OTHER than an organized string print like I did in /all. I was finally able to present the data in a database-like structure using a module I've never used before so the user didn't have to download a database viewing software and could view it locally with the help of the flask_table module. 
 
 ## How to run tests
